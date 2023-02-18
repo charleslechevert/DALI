@@ -1,0 +1,33 @@
+.navbar__container {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.navbar__title {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.navbar__logo {
+    height: 6vh;
+    width: auto;
+    filter: invert(100%) sepia(5%) saturate(7492%) hue-rotate(156deg) brightness(115%) contrast(102%);
+}
+
+.navbar__log-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:end;
+    height: 100%;
+}
+
+.navbar__pseudo {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+}

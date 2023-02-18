@@ -1,0 +1,15 @@
+.section__container {
+    width: 32%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+    /*box-shadow: 4px 4px rgb(76, 76, 76);;*/
+}
+
+.section__title {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2vh;
+    font-size: 1.4rem;
+
+}
