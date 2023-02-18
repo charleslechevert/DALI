@@ -1,0 +1,81 @@
+### SIGNUP
+
+POST http://localhost:3001/auth/register
+Content-Type: application/json
+
+{
+  "pseudo": "emma",
+  "password": "arsenal"
+}
+
+##### LOGIN
+
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+  "pseudo": "charles",
+  "password": "arsenal"
+}
+
+
+### USER
+
+GET http://localhost:3001/users/63e3c45a05368119b22b61d4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTNjNDVhMDUzNjgxMTliMjJiNjFkNCIsImlhdCI6MTY3NjM2Mjc5MywiZXhwIjoxNjc2MzYyODIzfQ.2eC8Tp4DEtBs7tAFVxPw8fA9P-meKXiRqiiTGtb2VJs
+
+### DRAW
+
+GET http://localhost:3001/draws/63e3e38a2ed36d2d8c5a236d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTNjNDVhMDUzNjgxMTliMjJiNjFkNCIsImlhdCI6MTY3NjUzOTQ1MSwiZXhwIjoxNjc2NTQzMDUxfQ.SLg-mVftxDUfZJKxJl3V75GDvn4h-BbSLGrMzwu2Ae8
+
+### DRAWS
+
+GET http://localhost:3001/draws
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTNjNDVhMDUzNjgxMTliMjJiNjFkNCIsImlhdCI6MTY3NjE5MjMxMX0.Z1XUzma8iYEA7vbCiHMkdWuD-diXPg2b7SbNrSPiELM
+
+
+### INSERT DRAW
+
+POST http://localhost:3001/draws/insert
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTNjNDVhMDUzNjgxMTliMjJiNjFkNCIsImlhdCI6MTY3NjE5MjMxMX0.Z1XUzma8iYEA7vbCiHMkdWuD-diXPg2b7SbNrSPiELM
+Content-Type: application/json
+
+{
+  "name": "a Fox",
+}
+
+### INSERT DRAWS
+
+POST http://localhost:3001/draws/insertMany
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTNjNDVhMDUzNjgxMTliMjJiNjFkNCIsImlhdCI6MTY3NjU0NDE5OSwiZXhwIjoxNjc2NTQ3Nzk5fQ.8TvojzBJoBVIGCEOJT37ABqczWaojcrOUJX4w7E6IrU
+
+
+
+
+### GAMES BY USER ID
+
+GET http://localhost:3001/games/63e3c45a05368119b22b61d4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTNjNDVhMDUzNjgxMTliMjJiNjFkNCIsImlhdCI6MTY3NjM3MDQwNCwiZXhwIjoxNjc2MzcwNDM0fQ.XjFh38ACufTrphsai3oCsdGfF9nlHhIFDPsymPmCZaI
+
+
+### INSERT GAME
+
+POST http://localhost:3001/games/insert
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWY2MWNiYzgzMzAyNDc2ZTU4ZTZmOSIsImlhdCI6MTY3NjYzMzg3MCwiZXhwIjoxNjc2NjM3NDcwfQ.-Qeb22tUpZse4b4tQd2Gl-naG1GPzd0qEo9l9Pmd03E
+Content-Type: application/json
+
+{
+  "timer": 20,
+  "user_id": "63ef61cbc83302476e58e6f9",
+  "draw_id": "55656",
+  "score": 78,
+  "name" : "yo"
+}
+
+### REFRESH
+
+GET http://localhost:3001/refresh
+
+
+### INSERT GAME IN USER COLLECTION

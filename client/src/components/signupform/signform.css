@@ -1,0 +1,45 @@
+.sign__form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:60%;
+    margin: 8vh 0;
+    width: 50%;
+    
+}
+
+.sign__form-subcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.sign__form-label {
+    text-transform: uppercase;
+    margin-bottom: 0.7vh;
+}
+
+.sign__form-input {
+    border: none;
+    border-radius: 10px;
+    height: 2.5vh;
+    
+}
+
+.sign__form-submit {
+    border-radius: 10px;
+    background-color: #A99FDA;
+    height: 4vh;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1vh;
+}
+
+.sign__form-error {
+    margin: 1vh 0;
+    color: rgb(232, 92, 92);
+    font-size: 0.8rem;
+}

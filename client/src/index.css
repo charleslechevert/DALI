@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+
+#root {
+  --gradient: linear-gradient(217deg, #e66465, rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, #9198e5, rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(107, 255, 230, 0.8), rgba(0,0,255,0) 70.71%);
+  --main: #E4878E;
+  --main2:#A7E2D4;
+  --main3:#B38FBE;
+  --container: rgb(49,49,49);
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  background: var(--gradient);
+  color: white;
+  overflow: hidden;
+}
+

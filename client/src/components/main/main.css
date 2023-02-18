@@ -1,0 +1,43 @@
+.main__container {
+    position: relative;
+    height:90%;
+}
+
+.main__subcontainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main__start-container {
+    text-transform: uppercase;
+
+
+}
+
+.main__start-button {
+    background: var(--main2);
+    text-align: center;
+    padding: 2vh;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 50%;
+    margin : 1vh auto;
+}
+
+.main__start-details {
+    text-align: center;
+    padding: 2vh;
+    font-weight: 500;
+}
+
+.main__img {
+    height : 30vh;
+    width: auto;
+    border-radius: 10px;
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(156deg) brightness(115%) contrast(102%);
+
+}
